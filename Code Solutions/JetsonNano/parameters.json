@@ -1,0 +1,15 @@
+{
+    "DataPath" : "/home/edgar/tfg/Code Solutions/JetsonNano/.data/",
+    "RealSenseCaptureTotalTime_ms" : 27500,
+    "RealSenseCaptureTimingBetweenCaptures_ms" : 500,
+    "NumberOfCaptureFiles" : 52,
+    "ResizeCenterDistance_m" : 0.63,
+    "ResizeCaptureBottom_m" : 0.47,
+    "ResizeCaptureTop_m" : 0.25,
+    "ResizeCaptureLeft_m" : 0.5,
+    "ResizeCaptureRight_m" : 0.5,
+    "ResizeCaptureBehind_m" : 0.35,
+    "ResizeCaptureFront_m" : 0.4,
+    "ICP_Iterations" : 200,
+    "ICP_MaxCorrespondenceDistance" : 0.02
+}

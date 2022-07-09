@@ -1,0 +1,50 @@
+\chapter{Calibración de los sensores.}
+
+\todo[inline]{Enseñar los errores que pueden dar las capturas y explicar que es un problema de calibración y como se podría mejorar.}
+
+% Por otro lado, buscando investigaciones relacionadas con el sensor, en ``Análisis comparativo de métodos de calibrado para sensores RGB-D y su influencia en el registro de múltiples vistas'' de \citep{VillenaMartinez2015} se demuestra que los parámetros por defecto que se utilizan en los sensores \gls{rgbd} pueden no ser lo suficientemente precisos.
+% Por tanto es necesario hacer un estudio previo de métodos de calibrado para la obtención de mejores resultados.
+% El calibrado en sensores \gls{rgbd} consiste en encontrar los parámetros adecuados para el sensor permitiendo mejorar la exactitud de los datos obtenidos.
+% Estos datos consistirán en la información del color y la profundidad en la escena.
+
+% Existen dos tipos de calibrados:
+% intrínseco y extrínseco.
+
+% \begin{description}
+%     \item[Calibrado intrínseco:]
+    
+%     es aquel que se centra en los parámetros internos del sensor.
+
+%     Uno de esos parámetros es la distancia entre el centro óptico y el plano focal donde se proyecta la imagen, conocida como distancia o longitud focal.
+%     Ésta permite estimar el campo de visión de la cámara.
+
+%     Otro parámetro es el punto principal que representa el desplazamiento del eje óptico respecto al sensor, provocando un desplazamiento en la proyección de la imagen.
+
+%     Las distorsiones ópticas debido a fallos en el diseño o fabricación de las lentes es otro parámetro a tener en cuenta.
+%     Esta distorsión puede ser una distorsión radial (lentes que no son perfectamente parabólicas) o tangencial (lente que no es paralela totalmente con el sensor).
+
+%     \item[Calibrado extrínseco:]
+    
+%     se refiere al tipo de calibrado que se centra en las características externas.
+%     Un ejemplo de ello sería el alineamiento de una cámara estereoscópica.
+
+%     Consiste en el proceso de situar las imágenes obtenidas por ambos sensores del mismo sistema.
+%     Para ello es necesario conocer las matrices de rotación y traslación que permitan aplicar la transformación necesaria para que las imágenes obtenidas queden situadas en un eje de coordenadas común.
+% \end{description}
+
+% En ``A Quantitative Comparison of Calibration Methods for RGB-D Sensors Using Different Technologies'', trabajo de investigación de \citep{VillenaMartinez2017} se trató de analizar tres métodos distintos de calibración con la finalidad de encontrar el mejor método de calibrado para mejorar la exactitud de los datos obtenidos.
+% Se comparan los métodos de Bouguet, Burrus y Herrera.
+
+% El método de \citep{bouguet2004camera} intenta calibrar la cámara RGB y el sensor de profundidad como si se tratase de un sistema estéreo, aplicando transformaciones para obtener las correspondencias entre el mapa de profundidad y la imagen de color.
+
+% El método de \citep{burrus2012rgbdemo} también realiza el proceso de calibración como si se tratase de un sistema estéreo.
+% A partir de la información del patrón en ambas cámaras se realiza una calibración para obtener los parámetros extrínsecos que permiten alinear las imágenes de ambas c    ámaras (color y profundidad).
+
+% El método de \citep{HerreraC.2012} permite calibrar simultáneamente la posición relativa entre dos cámaras de color y una cámara de profundidad.
+% Además, ha sido diseñado con el objetivo de ser aplicable a varios sensores.
+
+% De todas las pruebas realizadas en dicha investigación, el método de Herrera es el que mejores resultados obtiene generalmente.
+
+% También merece la pena tener en cuenta un algoritmo llamado \gls{mclse}.
+% En el artículo científico ``Iterative multilinear optimization for planar model fitting under geometric constraints'' de \citep{Azorin-Lopez2021} presentan este algoritmo como un método de calibrado extrínseco para el cálculo de modelos planares con restricciones.
+% Se trata de un algoritmo muy rápido y preciso.

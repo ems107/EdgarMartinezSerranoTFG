@@ -1,0 +1,10 @@
+\chapter{Conclusión}
+\label{cap:conclusion}
+
+En este trabajo se presenta un sistema económico y portable que es capaz de reconstruir objetos y cuerpos en \gls{3d} de forma eficiente utilizando un sensor \gls{rgbd} y un pequeño computador embebido que es capaz de aprovechar la \gls{gpu} para acelerar el funcionamiento.
+Se ha implementado uno de los métodos de registro de nubes de puntos más utilizado haciendo uso de la librería \gls{pcl} y se ha conseguido usar aprovechando la concurrencia en el algoritmo con los núcleos de la \gls{gpu}.
+Sin embargo, se ha hecho uso de una librería oficial implementada por Nvidia que no proporciona mucho margen para personalizarla, lo que ha sido un problema para obtener resultados de buena calidad.
+Se plantea como mejora a corto plazo para este trabajo la posibilidad de desarrollar una implementación del algoritmo \gls{icp} personalizada, que de juego a modificar parámetros para conseguir mejores resultados.
+
+Por otro lado, también es interesante como mejora a corto plazo seguir investigando en la línea de los métodos de registro no rígidos, desarrollando también una versión personalizada del algoritmo \gls{pcl} que utilice \gls{cuda} y pueda aprovechar los núcleos de la \gls{gpu}.
+De esta forma podría llegar a ser viable la ejecución de estos algoritmos en este sistema, lo cual implicaría una mejora de calidad en las reconstrucciones sobre cuerpos humanos debido a que permitiría realizar una reconstrucción \gls{3d} con modelos no rígidos.

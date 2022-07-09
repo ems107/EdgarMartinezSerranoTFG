@@ -1,0 +1,6 @@
+.vs/
+.vscode/
+Debug/
+.data/
+.data_history/
+build/

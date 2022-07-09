@@ -1,0 +1,15 @@
+{
+  "DataPath": "E:\\TFG\\Code Solutions\\JetsonNanoWindowsTesting\\.data\\",
+  "RealSenseCaptureTotalTime_ms": 40000,
+  "RealSenseCaptureTimingBetweenCaptures_ms": 500,
+  "NumberOfCaptureFiles": 49,
+  "ResizeCenterDistance_m": 0.6,
+  "ResizeCaptureBottom_m": 0.85,
+  "ResizeCaptureTop_m": 1.2,
+  "ResizeCaptureLeft_m": 0.5,
+  "ResizeCaptureRight_m": 0.5,
+  "ResizeCaptureBehind_m": 0.7,
+  "ResizeCaptureFront_m": 0.7,
+  "ICP_Iterations": 200,
+  "ICP_MaxCorrespondenceDistance": 0.01
+}
